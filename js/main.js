@@ -3,49 +3,49 @@ const productos = [
     {
         id: "indu01",
         nombre: "Buzo What",
-        imagen: "./img1/Img1.jpg",
+        imagen: "./img/Img1.jpg",
         precio: 2500
     },
     {
         id: "indu02",
         nombre: "Remeron City",
-        imagen: "./img1/Img2.jpg",
+        imagen: "./img/Img2.jpg",
         precio: 3000
     },
     {
         id: "indu03",
         nombre: "New York",
-        imagen: "./img1/Img3.jpg",
+        imagen: "./img/Img3.jpg",
         precio: 6000
     },
     {
         id: "indu04",
         nombre: "Big Ciel",
-        imagen: "./img1/Img4.jpg",
+        imagen: "./img/Img4.jpg",
         precio: 3000
     },
     {
         id: "indu05",
         nombre: "Buzo Oversize",
-        imagen: "./img1/Img5.jpg",
+        imagen: "./img/Img5.jpg",
         precio: 10000
     },
     {
         id: "indu06",
         nombre: "Remera Entallada",
-        imagen: "./img1/Img6.png",
+        imagen: "./img/Img6.png",
         precio: 400
     },
     {
         id: "indu07",
         nombre: "Buzo Los Angeles ",
-        imagen: "./img1/Img7.jpg",
+        imagen: "./img/Img7.jpg",
         precio: 11500
     },
     {
         id: "indu08",
         nombre: "Buzo White",
-        imagen: "./img1/Img8.jpg",
+        imagen: "./img/Img8.jpg",
         precio: 12000
     }
 ];
