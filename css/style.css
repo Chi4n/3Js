@@ -61,7 +61,7 @@ p {
     transform: scale(1.01);
 }
 
-.indumentaria .card-indu .card-body .btn-card {
+.indumentaria .card-indu .card-body .btn-card{
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -244,4 +244,48 @@ p {
     color: #646566;
     margin: 0px 10px;
     width: 100%;
+}
+
+.navDear{
+    background-color: #030303;
+    color: aliceblue;
+    padding: 10px;
+    display: flex;
+}
+.btn{
+    background-color: #646566;
+    display: flex;
+    margin-left: 100rem;
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: aliceblue;
+    color: rgb(5, 5, 5);
+    
+}
+
+
+.bodyDear{
+    background: linear-gradient(100deg, var(--violet) 25%, var(--turquoise) 50%, var(--violet) 75%);
+    background-repeat: repeat;
+    padding: 1rem;
+    border-radius: 1rem;
+    animation: gradient 5s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: -80rem 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }
