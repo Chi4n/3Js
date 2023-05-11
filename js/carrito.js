@@ -58,6 +58,25 @@ function mostrarProductosCarrito() {
 };
 
 function EliminarProdDelCarrito(e) {
+
+    Toastify({
+        text: "Producto Eliminado",
+        duration: 3000,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #646566, #030303)",
+          borderRadius: "1rem",
+        },
+        offset: {
+            x: '4rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+            y: '2rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+          },
+        onClick: function(){} // Callback after click
+      }).showToast();
+
     const idBoton = e.currentTarget.id;
     const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
     productosEnCarrito.splice(index, 1);
