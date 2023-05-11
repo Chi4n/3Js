@@ -9,7 +9,7 @@ logueo.addEventListener ("click", ()=>{
         title: "Login",
         html: ` <input type="text" id="usuario" class="swal2-input" placeholder="usuario">
                 <input type="text" id="password" class="swal2-input" placeholder="password">`,
-        confirmButtonText: "Enviar",
+        confirmButtonText: "Iniciar Sesion",
         showCancelButton: true,
         cancelButtonText: "Salir",
     }) .then((result) =>{
