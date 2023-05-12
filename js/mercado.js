@@ -1,4 +1,5 @@
 // Array de Productos
+
 const productos = [
     {
         id: "indu01",
@@ -48,7 +49,19 @@ const productos = [
         imagen: "./img/Img8.jpg",
         precio: 12000
     }
-];
+ ]; 
+
+
+  // profe/tutor, a la hora de hacer el fetch me lo muestra correctamente pero no entiendo por que no me lo agrega el producto al carrito, dejo esto escrito aca para poder saber a la hora de la devolucion cual era la solucion.
+  //muhas gracias!!! y buena vida ambos!! 
+
+// fetch("./js/producto.json")
+//      .then(response => response.json())
+//      .then(data => {
+//         mostrarProductos(data)
+//      })
+     
+
 
 let productosEnCarrito = [];
 const contenedorIndu = document.querySelector("#contenedor-indu");
@@ -74,26 +87,29 @@ function mostrarProductos() {
 
         contenedorIndu.append(div);
     });
+    
 };
 
 function agregarProdAlCarrito(e) {
+
     Toastify({
-        text: "Producto agregado",
+        text: "Producto Agregado",
         duration: 3000,
         close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        gravity: "top", 
+        position: "right", 
+        stopOnFocus: true, 
         style: {
           background: "linear-gradient(to right, #646566, #030303)",
           borderRadius: "1rem",
+          textTransform: "uppercase"
         },
         offset: {
-            x: '4rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-            y: '2rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+            x: '4rem', 
+            y: '2rem' 
           },
-        onClick: function(){} // Callback after click
-      }).showToast();
+        onClick: function(){} 
+    }).showToast();
 
     const idBoton = e.currentTarget.id;
     const productoAgregar = productos.find(producto => producto.id === idBoton);
@@ -118,8 +134,9 @@ function actualizarContadorCarrito() {
 
 
 /************************************************************************************************************/
-mostrarProductos();
+mostrarProductos()
 const botonesAgregar = document.querySelectorAll(".boton-agregar-indu");
+
 
 if (productosEnCarritoLS) {
     productosEnCarrito = JSON.parse(productosEnCarritoLS);

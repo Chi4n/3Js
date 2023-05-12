@@ -9,6 +9,7 @@ const botonComprar = document.querySelector("#carrito-acciones-comprar");
 const carritoAccionesTotal = document.querySelector("#acciones-total");
 let botonesEliminar = "";
 
+
 function mostrarProductosCarrito() {
 
     if (productosEnCarrito && productosEnCarrito.length > 0) {
@@ -63,18 +64,18 @@ function EliminarProdDelCarrito(e) {
         text: "Producto Eliminado",
         duration: 3000,
         close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        gravity: "top", 
+        position: "right", 
+        stopOnFocus: true, 
         style: {
           background: "linear-gradient(to right, #646566, #030303)",
           borderRadius: "1rem",
         },
         offset: {
-            x: '4rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-            y: '2rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+            x: '4rem', 
+            y: '2rem' 
           },
-        onClick: function(){} // Callback after click
+        onClick: function(){} 
       }).showToast();
 
     const idBoton = e.currentTarget.id;
