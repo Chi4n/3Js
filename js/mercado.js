@@ -54,11 +54,12 @@ const productos = [
 
   // profe/tutor, a la hora de hacer el fetch me lo muestra correctamente pero no entiendo por que no me lo agrega el producto al carrito, dejo esto escrito aca para poder saber a la hora de la devolucion cual era la solucion.
   //muhas gracias!!! y buena vida ambos!! 
-
+// let productos = []
 // fetch("./js/producto.json")
 //      .then(response => response.json())
 //      .then(data => {
-//         mostrarProductos(data)
+//     producto = data;
+//         mostrarProductos()
 //      })
      
 
